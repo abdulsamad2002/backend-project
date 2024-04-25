@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Javascript Backend Project",
   "main": "script.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/script.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/abdulsamad2002/backend-project/issues"
   },
-  "homepage": "https://github.com/abdulsamad2002/backend-project#readme"
+  "homepage": "https://github.com/abdulsamad2002/backend-project#readme",
+  "dependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
