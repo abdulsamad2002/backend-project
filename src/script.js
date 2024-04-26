@@ -7,8 +7,14 @@ dotenv.config({
 })
 
 connection()
-
-
+.then(()=>{
+    app.listen(process.env.PORT || 8000, ()=>{
+        console.log(`Server is up and running at ${process.env.PORT}`)
+    })
+})
+.catch((error)=> {
+    console.log("ERROR: Can't connect to database", error)
+})
 
 
 
